@@ -1,4 +1,4 @@
-const EthrDID = require('ethr-did');
+const { default: EthrDID } = require('ethr-did');
 
 const fs = require('fs');
 const path = require('path');
