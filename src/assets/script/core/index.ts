@@ -86,5 +86,3 @@ export class EWDIDCore {
   }
        
 }
-
-export default EWDIDCore;

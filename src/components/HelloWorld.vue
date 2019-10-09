@@ -65,7 +65,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import EWDIDCore from "../assets/script/core";
+import { EWDIDCore } from "../assets/script/core";
 
 @Component
 export default class HelloWorld extends Vue {
