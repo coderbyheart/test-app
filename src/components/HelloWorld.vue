@@ -14,13 +14,6 @@
     <ul>
       <li>
         <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-        >babel</a>
-      </li>
-      <li>
-        <a
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript"
           target="_blank"
           rel="noopener"
@@ -73,16 +66,15 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import EWDIDCore from "../assets/script/core";
-import { log } from "util";
 
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
   test() {
+    console.log(EWDIDCore);
     const RegLib = new EWDIDCore({
       address: "0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c"
     });
-    console.log(RegLib);
   }
   created() {
     this.test();
